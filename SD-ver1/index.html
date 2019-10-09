@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sein Diamond</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+	<script type="text/javascript" src="JQ/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<!-- <script type="text/javascript" src="typed/lib/typed.js" ></script> -->
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<link rel="icon" type="image/png" sizes="16*16" href="image/icon.jpg">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<script type="text/javascript" src="jquery.ripples-min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="theme.css"> -->
+	<script type="text/javascript" src="custom.js"></script>
+	<script type="text/javascript" src="jquery.easypiechart.js"></script>
+	<link rel="icon" type="image/png" sizes="16*16" href="image/loogoo.jpg">
+	<link rel="preload" as="font" href="/fonts/custom-font.woff2" type="font/woff2" crossorigin="anonymous">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script> 
+	<script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js"></script>
+	<script src="jquery.ripples.js"></script>
+  <script> 
+        WebFont.load({
+                    google: { 
+                           families: ['time new roman', 'helveticanue'] 
+                     } 
+         }); 
+   </script>
+
+	<script>
+		$(function(){
+			$('.chart').easyPieChart({
+				size:100,
+				barColor: '#129ea1',
+				scaleColor:false,
+				lineWidth:5,
+				animate:1700,
+			});
+		})
+	</script>
+	
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){
+			$('.wraper').ripples({
+			dropRadius:10,
+			perturbance:0.3,
+			});
+		})
+	</script> -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+	try {
+		$('.wraper').ripples({
+			resolution: 256,
+			dropRadius:10,
+			perturbance: 0.04
+		});
+	}
+	catch (e) {
+		$('.error').show().text(e);
+	}
+});
+	</script>
+	
+</head>
+<body>
+	<div style="background-color: #fff">
+
+<div class="container-fluid mb-5">
+		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="main_nav">
+		<div class="container-fluid" >
+		 <a class="navbar-brand" href="#">
+          	<img src="image/loogoo.jpg" alt="img-fluid" style="width:50px; height: 50px; margin-left: 0px; " href="index.html">
+        </a>
+				<a href="index.html" class="navbar-brand">Sein Diamond Paints</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+
+				<li class="nav-item mx-3 active">
+					<a href="index.html"  class="nav-link">HOME</a>
+				</li>
+				<!-- <li class="nav-item mx-3 active">
+					<a href="product.html"  class="nav-link">PRODUCTS</a>
+				</li> -->
+				<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			PRODUCTS</a>
+          			<ul class="dropdown-menu mega-menu">
+          				<li>
+          					<div class="row">
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Interior Paint</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="nd-interior.html">New Diamond Emulsion Paint</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Exterior Paint</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="exterior.html">Sein Diamond Emulsion Paint</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Enamel Paints</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="sd-enamel.html">Sein Diamond Enamel</a></li>
+										<li><a class="dropdown-item" href="nd-enamel.html">New Diamond Enamel</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Primer Paint</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="sd-redoxide.html">Sein Diamond Red Oxide</a></li>
+										<li><a class="dropdown-item" href="nd-redoxide.html">New Diamond Red Oxide</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Marine Paint</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="marine.html">Grand Marine Paint</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-3">
+									<span class="dropdown-mega-sub-title">Wood Coating</span>
+									<ul class="dropdown-mega-sub-nav">
+										<li><a class="dropdown-item" href="wood.html">Wood Coating</a></li>
+									</ul>
+								</div>
+          				</li>
+          			</ul>
+	        			<!-- <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+	        				<li>
+	        					<div class="dropdown-mega-content">
+									<div class="row">
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Premium Paint</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="New-Diamond-Super-Gloss-Enamel-Paint.html">New Diamond </a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Economy Paint</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="Sein-Diamond-Super-Gloss-Enamel-Paint.html">Sein Diamond</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Primer</span>
+											<ul class="dropdown-mega-sub-nav">
+											<li><a class="dropdown-item" href="New-Diamond-Red-Oxide-Primer.html">New Diamond Red Oxide Primer</a></li>
+											<li><a class="dropdown-item" href="SD-Red-Oxide-Primer.html">Sein Diamond Red Oxide Primer</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Varnish</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="Shine-Varnish-New-Diamond-Varnish.html">New Diamond Shine Varnish</a></li>
+												<li><a class="dropdown-item" href="Red-Indian-Shine-Varnish.html">Red Indian Shine Varnish</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Marine Paint</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="GMP-Grand-Marine-Paint.html">Grand Marine Paint</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Super Glue</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="Super-Glue-Liquid.html">Super Star Glue</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-3">
+											<span class="dropdown-mega-sub-title">Polish</span>
+											<ul class="dropdown-mega-sub-nav">
+												<li><a class="dropdown-item" href="Star-Polish.html">Star Polish</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+        				</ul> -->
+	          				<!-- <li><a class="dropdown-item" href="nd-interior.html">Interior Paints</a></li>
+	          				<li><a class="dropdown-item" href="exterior.html">Exterior Paints</a></li>
+	          				<li class="nav-item dropdown">
+	          					<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Enamel Paints</span></a>
+	          					<ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+	          						<li><a href="sd-enamel.html" class="dropdown-item">SD Enamel</a></li> 
+	          						<li><a href="nd-enamel.html" class="dropdown-item">ND Enamel</a></li>
+	          						
+	          					</ul>
+	          				</li>
+	          				
+	          				<li class="nav-item dropdown">
+	          					<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primer Paints</a>
+	          					<ul class="dropdown-menu" aria-labelledby="navbarDropdown2"> 
+	          						<li><a href="sd-redoxide.html" class="dropdown-item">SD Red Oxide</a></li>
+	          						<li><a href="nd-redoxide.html" class="dropdown-item">ND Red Oxide</a></li>
+	          						
+	          					</ul>
+	          				</li>
+	          				<li><a class="dropdown-item" href="marine.html">Marine Paint</a></li>
+	          				<li><a class="dropdown-item" href="wood.html">Wood Coatings</a></li> -->
+
+	        			<!-- </ul> -->
+     			 </li>
+
+				<li class="nav-item mx-3">
+					<a href="location.html" class="nav-link">LOCATION</a>
+				</li>
+				<li class="nav-item mx-3">
+					<a href="service.html" class="nav-link">SERVICES</a>
+				</li>
+
+				<!-- <li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          			BLOG</a>
+	        			<ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+	        				
+	          				
+	          				<li><a class="dropdown-item" href="nd-interior.html">Press Release</a></li>
+	          				<li><a class="dropdown-item" href="exterior.html">Current Project</a></li>
+	          				
+	          				
+	          				
+	        			</ul>
+     			 </li> -->
+				<li class="nav-item mx-3">
+					<a href="about.html" class="nav-link">ABOUT</a>
+				</li>
+				<li class="nav-item mx-3 ">
+					<a href="contact.html" class="nav-link">CONTACT</a>
+				</li>
+				<li class="nav-item mx-3 mr-5">
+					<a href="mmindex.html"><img src="image/myanmar.png" style="width: 30px;height: 30px;"><a>
+					<a href="#"><img src="image/english.png" style="width: 30px;height: 30px;"></a>
+				</li>
+			</ul>
+			<!-- <div class="language">
+				<a href="#"><img src="image/mm.png">
+				<span class="wpml-ls-native">ျမန္မာဘာသာ</span></a>
+
+			</div> -->
+		</div>
+		</div>
+	</nav>
+</div>
+	<br>
+
+
+	
+			<div class="wraper" style="margin-top: 19px; ">
+				<!--  <img src="eg2.jpg" alt="home-banner" class="img-fluid home-banner"> -->
+				<div class="wraper-text" style="margin-top: -50px;">
+					<center><h2    style="color: black; font-size: 15px;"> WELCOME TO<strong style="color: #4267b2; font-size: 23px" > SEIN DIAMOND PAINTS</strong> <span style="color: #09ed68;" >FAMILY.</span></h2><br>
+					<p class="animatedText" style=" font-size: 17px; color: #322531; ">When we say <strong style="color: #fff; font-weight: bold; color: #4267b2;">FAMILY</strong>, it's our chemists, friendly staffs and our beloved customers. Trusted by over <strong class="text-color-light" style="color: #FFC300">30,000</strong> satisfied customers, Sein Diamond Paint is  Myanmar's longest running manufacture of paint.</p></center>
+				</div>
+			</div>
+		
+	
+	
+	
+		<!--Product-->
+		<!-- <div class="home-product">
+			<div class="row my-5">
+				<div class="col-md-4">
+					<div class="box-content">
+						<img src="image/exterior.jpg" width="360px" height="200px" />
+						<h4 class="font-weight-bold">Exterior Paint</h4>
+						<p>Sein Diamond makes dozens of exterior paints, formulated and tested to stand up to the rigours of Myanmar's monsoon.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-content">
+							<img src="image/interior.jpg" width="360px" height="200px" />
+							<h4 class="font-weight-bold">Interior Paint</h4>
+							<p>We make interior paints that we know you'll be proud to show off. Whether entertaining guests for a small party or hosting a major event, we know you'll love our paint. </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+						<div class="box-content">
+							<img src="image/vanrish.jpg" width="360px" height="200px" />
+								<h4 class="font-weight-bold">Varnish</h4>
+								<p>Need to refinish your furniture? Sein Diamond's Red Indian Varnish will make your furniture look brand new!</p>
+						</div>
+				</div>
+									
+			</div>
+			<div class="row my-5">
+				<div class="col-md-4">
+					<div class="box-content">
+						<img src="image/marine.png" alt="img-fluid" width="360px" height="200px" />
+						<h4 class="font-weight-bold">Marine Paint</h4>
+						<p>Whether you're looking to paint a Malaccamax Container ship or your pleasure cruiser, Sein Diamond has the paint for you.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+						<div class="box-content">
+							<img src="image/primer.jpg" width="360px" height="200px" />
+							<h4 class="font-weight-bold">Primer</h4>
+							<p>When you're getting ready to paint be sure to get New Diamond Red Oxide Primer, one of Myanmar's leading primers.</p>
+						</div>
+				</div>
+				<div class="col-md-4">
+						<div class="box-content">
+							<img src="image/delivery.png" width="360px" height="200px" />
+							<h4 class="font-weight-bold">Free delivery</h4>
+							<p >We will provide free shipping for projects and shipments of qualifying size.</p>
+						</div>
+				</div>
+									
+			</div>
+		</div> -->
+		<!--End of Product-->
+
+		<!--card-product-->
+		<div class="container">
+			<div class="container">
+		<div class="row my-5">
+			<div class="col-md-12"  >
+				
+				
+				<center><p style="font-weight: bolder; font-family: helveticanue; font-size: 30px;" >OUR LATEST PRODUCTS AND BRANDS</p><p style="font-size: 15px; font-weight: bolder">BELIEVE <strong style="color: #4267b2; font-size: 20px">SEIN DIAMOND PAINTS </strong>TO BE BRIGHTER YOUR FUTURE</p></center>
+
+				<hr>
+				
+			</div>
+			<div class="col-md-3 col-sm-6" >
+				<div class="my-2">
+					<center><img src=" image/exterior2.jpg." class="img-fluid" style="height: 240px; width: 240px;"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Sein Diamond Emulsion Paint</strong></center><p style="font-size: 12px; margin-top: 8px;">This is a 100% Acrylic emulsion paint specially formulated for minimal dirt pick up, high UV resistance and have great color retension.</p>
+						</div>
+				</div>
+				
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="my-2">
+						<center><img src="image/enamel11.jpg" class="img-fluid" style="height: 240px; width: 240px"></center>
+						
+						<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>New Diamond Enamel Paint</strong></center><p style="font-size: 12px; margin-top: 8px;">We make the greatest paints that we know you'll be proud to show off. Whether entertaining guests for a small party or hosting a major event, we know you'll love our paint.</p>
+						</div>
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class=" my-2">
+					<center><img src="image/redoxide.jpg" class="img-fluid" style="height: 240px; width: 240px"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Red Oxide</strong></center><p style="font-size: 12px; margin-top: 8px;">When you're getting ready to paint be sure to get New Diamond Red Oxide Primer, one of Myanmar's leading primers.</p>
+						</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="my-2">
+				<center><img src="image/varnish.jpg" class="img-fluid" style="height: 240px; width: 240px;"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Varnish</strong></center><p style="font-size: 12px; margin-top: 8px;">Need to refinish your furniture? Sein Diamond's Red Indian Varnish will make your furniture look brand new!</p>
+						</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+
+		
+			<div class="container">
+		<div class="row my-5">
+			<div class="col-md-12">
+				
+				
+				<center><h2 style="font-weight: bold; font-family: helveticanue">SEE OUR SPECIAL COLORS <br>OF OUR COMPANY</h2></center>
+				<hr>
+				
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="my-2">
+					<center><img src=" image/turquoise.jpg." class="img-fluid" style="height: 240px; width: 240px;"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Turquios Kitchen<br>(Greenish Blue)</strong></center>
+						</div>
+				</div>
+				
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="my-2">
+						<center><img src="image/purple.jpg" class="img-fluid" style="height: 240px; width: 240px"></center>
+						
+						<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Purple Kitchen</strong></center>
+						</div>
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class=" my-2">
+					<center><img src="image/green.jpg" class="img-fluid" style="height: 240px; width: 240px"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Green Kitchen</strong></center>
+						</div>
+				</div>
+				
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="my-2">
+				<center><img src="image/red.jpg" class="img-fluid" style="height: 240px; width: 240px;"></center>
+					<div style="font-size: 16px; margin-top: 15px; font-weight: bold;">
+							<center><strong>Red Kitchen</strong></center>
+						</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+		</div>
+
+
+		<!-- <div class="container my-5">
+			<div class="row mb-6" style="background: orange" data-aos="fade-left">
+		<div class="col-md-6 col-sm-12">
+			<div class="service-text" >
+				<h2>Sein Diamond Exterior Paint</h2>
+				<h4>This is a 100% Acrylic emulsion paint specially formulated for minimal dirt pick up, high UV resistance and have great color retension.</h4>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<div class="service-image-box">
+				<img src="image/exterior.jpg " class="service-image">
+			</div>
+		</div>
+	</div>
+		</div> -->
+		
+		<!-- <div class="card-group card-body" >
+			  <div class="col-md-4">
+			  	
+			    <img src="image/exterior.jpg" alt="Exterior Paint">
+				
+			    <div class="card-body">
+			      <h5 class="card-title" style="font-family: helveticanue; font-size: 23px; font-weight: bold; color: blue">Sein Diamond Exterior Paint</h5>
+			      <p class="card-text" style="font-size: 14px; font-weight: bold;">This is a 100% Acrylic emulsion paint specially formulated for minimal dirt pick up, high UV resistance and have great color retension.</p>
+			      <a href="exterior.html" class="btn btn-primary">Read More</a>
+			    </div>
+			  </div>
+			  <div class="col-md-4">
+			    <img src="image/interior.jpg" alt="interior">
+			    <div class="card-body">
+			      <h5 class="card-title">Interior Paint</h5>
+			      <p class="card-text">We make interior paints that we know you'll be proud to show off. Whether entertaining guests for a small party or hosting a major event, we know you'll love our paint.</p>
+			      <a href="nd-interior.html" class="btn btn-primary">Read More</a>
+			    </div>
+			  </div> -->
+			  <!-- <div class="col-md-4 card" style="background-color: white">
+			    <img src="image/vanrish.jpg" class="card-img-top" alt="vanrish">
+			    <div class="card-body">
+			      <h5 class="card-title">Varnish</h5>
+			      <p class="card-text">Need to refinish your furniture? Sein Diamond's Red Indian Varnish will make your furniture look brand new!</p>
+			      <a href="wood.html" class="btn btn-primary">Read More</a>
+			    </div>
+			  </div> -->
+		
+	</div>
+		<!-- <div class="row card-deck mb-5">
+			  <div class="col-sm-12 col-md-4  card">
+			    <img src="image/marine.jpg" class="card-img-top" alt="marine Paint">
+			    <div class="card-body">
+			      <h5 class="card-title">Marine Paint</h5>
+			      <p class="card-text">Whether you're looking to paint a Malaccamax Container ship or your pleasure cruiser, Sein Diamond has the paint for you.</p>
+			      <a href="marine.html" class="btn btn-primary">Read More</a>
+			    </div>
+			  </div>
+			  <div class="col-sm-12 col-md-4 card">
+			    <img src="image/primer.jpg" class="card-img-top" alt="interior">
+			    <div class="card-body">
+			      <h5 class="card-title">Primer</h5>
+			      <p class="card-text">When you're getting ready to paint be sure to get New Diamond Red Oxide Primer, one of Myanmar's leading primers.</p>
+			      <a href="exterior.html" class="btn btn-primary">Read More</a>
+			    </div>
+			  </div>
+			  <div class="col-sm-12 col-md-4 card">
+			    <img src="image/delivery.jpg" class="card-img-top" alt="vanrish">
+			    <div class="card-body">
+			      <h5 class="card-title">Free delivery</h5>
+			      <p class="card-text">We will provide free shipping for projects and shipments of qualifying size.</p>
+			    </div>
+			  </div>
+			</div>
+		</div> -->
+
+	
+	</div>
+		 <div class="row service" data-aos="fade-up" data-aos-delay="100" data-aos-duration="6000" data-aos-offset="200">
+				<div class="progress-circle mx-5">		 	
+					<div class="col-md-4 circle my-2">
+						
+						<div class="chart" data-percent="25">25%</div>
+						<h2>Cost</h2>
+						<p>Sein Diamond offers a range of products from the affordable Sein Diamond to the premium New Diamond.</p>	 		
+					</div>
+						 		
+					<div class="col-md-4 circle my-2">
+						
+						<div class="chart" data-percent="80">80%</div>
+						<h2>Durability</h2>
+						<p>Sein Diamond paints offer durability to last through monsoon and beyond, meaning you get to enjoy your color longer.</p>	
+						 		
+					</div>
+						 		
+					<div class="circle col-md-4 my-2">
+					
+						 <div class="chart" data-percent="100">100%</div>
+						 <h2>Service</h2>
+							<p>Sein Diamond puts customers first, ensuring that all customers are satisfied and have the best experience with our colors possible.</p>			
+					</div>
+				</div>
+						 		
+			</div>
+
+	
+		<div class="getstart-background">
+			<div class="row">
+				<div class="col getstart-text">
+					<h2>Sein Diamond has <strong>everything</strong> you need to make your house a modern <strong>masterpiece</strong>!</h2>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col getstart">
+					<a href="#" class="btn btn-primary">GET STARTED NOW!</a>
+				</div>
+			</div>
+		</div>
+		
+	
+<!-- Footer -->
+		<div class="pageFooter-content">
+			<div class="row ">
+
+				<div class="col-md-3 mt-5 ml-3">
+					<h4 class="mb-3">NEWSLETTER</h4>
+					<p class="pr-1">Keep up on our always evolving product features and technology. Enter your e-mail address and subscribe to our newsletter.</p>
+					<form class="input-group">
+		          		<input type="text" class="form-control form-control-sm inputform" placeholder="Your email"
+		            		aria-label="Your email" aria-describedby="basic-addon2">
+		          			<div>
+		            			<button class="btn btn-sm btn-outline-white my-0 inputbtn" type="button">Sign up</button>
+		          			</div>
+		        	</form>
+				</div>
+				<div class="col-md-3 mt-5 ">
+					<h5 class="mb-3">BLOG</h5>
+					<a href="https://www.facebook.com/seindiamondpaints">Career Opportunities</a><br>
+					<a href="PR.html">Press Release</a><br>
+				</div>
+				<div class="col-md-3 mt-5">
+					<div class="contact-details">
+						<h5 class="mb-3">CONTACT US</h5>
+						<ul>
+							<li class="mb-1"><p class="m-0"><i class="far fa-dot-circle"></i> No.(34), 4th Street, Block (8), Industrial Zone, South Okkalapa Township, Yangon, Myanmar</p></li>
+							<li class="mb-1"><p class="m-0"><i class="fab fa-whatsapp text-color-primary"></i> <a href="tel:8001234567">+951-571351</a></p></li>
+							<li class="mb-1"><p class="m-0"><i class="far fa-envelope text-color-primary"></i> <a href="mailto:info@sdicgroup.com">info@sdicgroup.com</a></p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 mt-5">
+					<div class="footer-follow">
+						<h5 class="mb-3">FOLLOW US</h5>
+						<div  class="social-icons">
+							<ul>
+								<li><a href="https://www.facebook.com/seindiamondpaints" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+										
+								<li><a href="https://www.linkedin.com/company/sein-diamond-paints/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="pageFooter-bottom">
+					<p>Copyright © 2019 Sein Diamond Paints Co. All Rights Reserved.</p>
+				</div>
+			</div>
+		
+	</div>
+
+<!-- end of Footer -->
+<script src="js/bootnavbar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script>
+		$('#main_nav').bootnavbar();
+	</script>
+
+</body>
+	<!-- <script type="text/javascript">
+		$(document).ready(function(){
+			var typed = new Typed('#typedd',{
+  				string:['first','second'],
+ 				 backSpeed:40,
+  				typeSpedd:40,
+			})
+
+		})
+	</script> -->
+</html>
